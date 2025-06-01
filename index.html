@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Indian History | 1526-2000</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="ashoka-chakra" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#ff6b35" stroke-width="2"/>
+                    <g class="spokes">
+                        <line x1="50" y1="5" x2="50" y2="95" stroke="#ff6b35" stroke-width="1"/>
+                        <line x1="95" y1="50" x2="5" y2="50" stroke="#ff6b35" stroke-width="1"/>
+                        <line x1="85.4" y1="14.6" x2="14.6" y2="85.4" stroke="#ff6b35" stroke-width="1"/>
+                        <line x1="85.4" y1="85.4" x2="14.6" y2="14.6" stroke="#ff6b35" stroke-width="1"/>
+                    </g>
+                </svg>
+                <span>Indian Heritage</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#mughal">Mughal Era</a></li>
+                <li><a href="#british">British Rule</a></li>
+                <li><a href="#freedom">Freedom Movement</a></li>
+                <li><a href="#independence">Independence</a></li>
+                <li><a href="#modern">Modern India</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="parallax-bg layer-1"></div>
+        <div class="parallax-bg layer-2"></div>
+        <div class="parallax-bg layer-3"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Journey Through Time</h1>
+            <p class="hero-subtitle">From Mughal Splendor to Modern India</p>
+            <p class="hero-years">1526 - 2000</p>
+            <svg class="scroll-indicator" viewBox="0 0 24 24">
+                <path d="M12 2L12 22M12 22L18 16M12 22L6 16" stroke="currentColor" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h2>Historical Regions of India</h2>
+        <div class="map-container">
+            <svg class="india-map" viewBox="0 0 400 600">
+                <path class="map-region" data-region="north" d="M50,50 L350,50 L350,200 L200,200 L50,200 Z" fill="#ff6b35" opacity="0.3"/>
+                <path class="map-region" data-region="west" d="M50,200 L200,200 L200,350 L50,350 Z" fill="#4a90e2" opacity="0.3"/>
+                <path class="map-region" data-region="central" d="M200,200 L350,200 L350,350 L200,350 Z" fill="#50c878" opacity="0.3"/>
+                <path class="map-region" data-region="south" d="M100,350 L300,350 L250,550 L150,550 Z" fill="#ffd700" opacity="0.3"/>
+                <circle cx="180" cy="120" r="4" fill="#8b0000" class="city" data-city="Delhi"/>
+                <circle cx="120" cy="280" r="4" fill="#8b0000" class="city" data-city="Mumbai"/>
+                <circle cx="320" cy="300" r="4" fill="#8b0000" class="city" data-city="Kolkata"/>
+                <circle cx="200" cy="450" r="4" fill="#8b0000" class="city" data-city="Chennai"/>
+            </svg>
+            <div class="map-tooltip" id="mapTooltip"></div>
+        </div>
+    </section>
+
+    <section id="mughal" class="era-section mughal-era">
+        <div class="section-bg">
+            <div class="floating-pattern pattern-1"></div>
+            <div class="floating-pattern pattern-2"></div>
+        </div>
+        <div class="container">
+            <h2 class="era-title">The Mughal Empire (1526-1857)</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="1526">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Battle of Panipat</h3>
+                        <p>Babur defeats Ibrahim Lodi, establishing the Mughal Empire</p>
+                        <div class="leader-card" data-leader="babur">
+                            <div class="leader-avatar"></div>
+                            <span>Babur</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="1556">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Akbar's Reign Begins</h3>
+                        <p>The Great Mughal ruler starts his 49-year reign</p>
+                        <div class="leader-card" data-leader="akbar">
+                            <div class="leader-avatar"></div>
+                            <span>Akbar the Great</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="1632">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Taj Mahal Construction</h3>
+                        <p>Shah Jahan begins building the monument of love</p>
+                        <div class="monument-icon taj-mahal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="british" class="era-section british-era">
+        <div class="section-bg">
+            <div class="colonial-pattern"></div>
+        </div>
+        <div class="container">
+            <h2 class="era-title">British Colonial Rule (1858-1947)</h2>
+            <div class="grid-layout">
+                <div class="event-card" data-event="sepoy-mutiny">
+                    <div class="event-icon revolt-icon"></div>
+                    <h3>1857 Sepoy Mutiny</h3>
+                    <p>First major uprising against British rule</p>
+                    <span class="event-year">1857</span>
+                </div>
+                <div class="event-card" data-event="bengal-partition">
+                    <div class="event-icon partition-icon"></div>
+                    <h3>Partition of Bengal</h3>
+                    <p>British divide Bengal to weaken nationalism</p>
+                    <span class="event-year">1905</span>
+                </div>
+                <div class="event-card" data-event="jallianwala">
+                    <div class="event-icon massacre-icon"></div>
+                    <h3>Jallianwala Bagh</h3>
+                    <p>Brutal massacre shocks the nation</p>
+                    <span class="event-year">1919</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="freedom" class="era-section freedom-era">
+        <div class="section-bg">
+            <svg class="flag-animation" viewBox="0 0 100 60">
+                <rect x="0" y="0" width="100" height="20" fill="#ff6b35"/>
+                <rect x="0" y="20" width="100" height="20" fill="#ffffff"/>
+                <rect x="0" y="40" width="100" height="20" fill="#50c878"/>
+                <circle cx="50" cy="30" r="8" fill="none" stroke="#000080" stroke-width="1"/>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="era-title">Freedom Movement (1885-1947)</h2>
+            <div class="leaders-gallery">
+                <div class="leader-profile" data-leader="gandhi">
+                    <div class="leader-image gandhi-silhouette"></div>
+                    <h3>Mahatma Gandhi</h3>
+                    <p>"Be the change you wish to see in the world"</p>
+                    <div class="leader-achievements">
+                        <span>Non-violent resistance</span>
+                        <span>Salt March 1930</span>
+                        <span>Quit India Movement</span>
+                    </div>
+                </div>
+                <div class="leader-profile" data-leader="nehru">
+                    <div class="leader-image nehru-silhouette"></div>
+                    <h3>Jawaharlal Nehru</h3>
+                    <p>"At the stroke of midnight, when the world sleeps, India will awake to life and freedom"</p>
+                    <div class="leader-achievements">
+                        <span>First Prime Minister</span>
+                        <span>Architect of Modern India</span>
+                        <span>Non-Alignment Movement</span>
+                    </div>
+                </div>
+                <div class="leader-profile" data-leader="bose">
+                    <div class="leader-image bose-silhouette"></div>
+                    <h3>Subhash Chandra Bose</h3>
+                    <p>"Give me blood, and I shall give you freedom"</p>
+                    <div class="leader-achievements">
+                        <span>Indian National Army</span>
+                        <span>Azad Hind Government</span>
+                        <span>Revolutionary Leader</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="independence" class="era-section independence-era">
+        <div class="container">
+            <h2 class="era-title">Independence & Partition (1947)</h2>
+            <div class="independence-timeline">
+                <div class="independence-moment">
+                    <div class="moment-time">August 14, 1947 - 11:57 PM</div>
+                    <h3>The Tryst with Destiny</h3>
+                    <div class="nehru-speech">
+                        <p>"Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge..."</p>
+                    </div>
+                </div>
+                <div class="partition-impact">
+                    <h3>The Great Partition</h3>
+                    <div class="partition-stats">
+                        <div class="stat">
+                            <span class="stat-number">14 million</span>
+                            <span class="stat-label">People displaced</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1 million</span>
+                            <span class="stat-label">Lives lost</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modern" class="era-section modern-era">
+        <div class="container">
+            <h2 class="era-title">Modern India (1947-2000)</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-achievement="green-revolution">
+                    <div class="achievement-icon agriculture-icon"></div>
+                    <h3>Green Revolution</h3>
+                    <p>Agricultural transformation in the 1960s</p>
+                    <span class="achievement-year">1960s</span>
+                </div>
+                <div class="achievement-card" data-achievement="pokhran">
+                    <div class="achievement-icon nuclear-icon"></div>
+                    <h3>Pokhran Nuclear Tests</h3>
+                    <p>India becomes nuclear power</p>
+                    <span class="achievement-year">1974 & 1998</span>
+                </div>
+                <div class="achievement-card" data-achievement="it-boom">
+                    <div class="achievement-icon tech-icon"></div>
+                    <h3>IT Revolution</h3>
+                    <p>Software services boom in the 1990s</p>
+                    <span class="achievement-year">1990s</span>
+                </div>
+                <div class="achievement-card" data-achievement="liberalization">
+                    <div class="achievement-icon economy-icon"></div>
+                    <h3>Economic Liberalization</h3>
+                    <p>Opening up of Indian economy</p>
+                    <span class="achievement-year">1991</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="modalBody">
+                </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <p>&copy; 2024 Journey Through Indian History. A tribute to our rich heritage.</p>
+               
+            </div>
+            <div class="footer-symbols">
+                <a href="https://www.linkedin.com/in/piyush-pandey-563b311b8" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:pandeypiyush538@gmail.com" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Piyush667-gif" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <svg class="lotus" viewBox="0 0 50 50">
+                    <path d="M25 5 C15 15, 15 35, 25 45 C35 35, 35 15, 25 5 Z" fill="#ff6b35"/>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
